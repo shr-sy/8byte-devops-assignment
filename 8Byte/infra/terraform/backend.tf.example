@@ -1,0 +1,15 @@
+terraform {
+  cloud {
+    organization = "your-hcp-org"
+    workspaces {
+      name = "8byte-dev"
+    }
+  }
+}
+
+# To use this with HCP Terraform:
+# 1. Create your HCP Terraform organization and workspace.
+# 2. Replace your-hcp-org and 8byte-dev with your real values.
+# 3. Run: terraform login
+# 4. Then run: terraform init
+# 5. Finally run: terraform plan / terraform apply
